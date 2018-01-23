@@ -12,7 +12,7 @@ install bitcoind:
 start_bitcoind:
   cmd.run:
     - name: bitcoind -daemon
-
-check_service_status:
-  cmd.run:
-    - name: bitcoin-cli getinfo
+    - cwd: /home/{{ grains['deescalated_user'] }}
+    - runas: {{ grains['deescalated_user'] }}
+    - require:
+      - sls: users
