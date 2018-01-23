@@ -1,6 +1,8 @@
-add_bitcoin_ppa:
+base:
   pkgrepo.managed:
     - ppa: bitcoin/bitcoin
+  pkg.latest:
+    - refresh: True
 
 install bitcoind:
   pkg.installed:
