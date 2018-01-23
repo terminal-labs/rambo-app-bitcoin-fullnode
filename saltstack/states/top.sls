@@ -6,7 +6,7 @@ base:
     - basebox.symlink
     - users                     {# requires basebox #}
     - python
-    - bitcoin-fullnode
+    - bitcoin
   'roles:prod':
     - match: grain
     - deploy_keys
