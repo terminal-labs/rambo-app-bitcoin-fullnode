@@ -8,3 +8,7 @@ install bitcoind:
   pkg.installed:
     - pkgs:
       - bitcoind
+
+start_bitcoind:
+  cmd.run:
+    - name: bitcoind -daemon
