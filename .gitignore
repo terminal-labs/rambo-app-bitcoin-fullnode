@@ -27,3 +27,4 @@ rambo/saltstack
 .tmp
 **/auth/keys
 **/licenses
+.rambo-tmp
